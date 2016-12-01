@@ -15,6 +15,15 @@
   }, 800);
 })();
 
+// geolocation object available?
+if ("geolocation" in navigator) {
+  navigator.geolocation.getCurrentPosition(function (pos) {
+    getWeatherData(pos.coords.latitude, pos.coords.longitude);
+  }, useIpService);
+} else {
+  useIpService();
+}
+
 // Create the XHR object.
 function createCORSRequest(method, url) {
   var xhr = new XMLHttpRequest();
@@ -32,8 +41,8 @@ function createCORSRequest(method, url) {
   return xhr;
 }
 
-// Get user ip.
-(function () {
+// Get user IP through IP service
+function useIpService() {
   var xhr = createCORSRequest('GET', 'https://ipapi.co/json/');
   if (!xhr) {
     throw new Error('CORS not supported');
@@ -46,7 +55,7 @@ function createCORSRequest(method, url) {
     alert('Woops, there was an error making the ip request.');
   };
   xhr.send();
-})();
+}
 
 function getWeatherData(lat, lon) {
   var xhr = createCORSRequest(

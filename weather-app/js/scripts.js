@@ -34,7 +34,7 @@ function createCORSRequest(method, url) {
 
 // Get user ip.
 (function () {
-  var xhr = createCORSRequest('GET', 'https://freegeoip.net/json/');
+  var xhr = createCORSRequest('GET', 'https://ipapi.co/json/');
   if (!xhr) {
     throw new Error('CORS not supported');
   }

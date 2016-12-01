@@ -1,0 +1,90 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  padding: 1.5rem;
+}
+
+p {
+  margin: 0
+}
+
+#widget {
+  max-width: 54rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin: 25rem auto 0;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.16), 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+}
+
+#widget:hover {
+  box-shadow: 0 0.8rem 1.7rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19)
+}
+
+#location {
+  font-size: 4.3rem;
+  display: none;
+}
+
+#temp {
+  font-size: 5.3rem;
+  margin-top: 0.4rem;
+  display: none;
+}
+
+#temp img {
+  vertical-align: top;
+  margin-right: 0.5rem;
+}
+
+#weather,
+#dots {
+  font-size: 3.4rem;
+}
+
+#switch {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  text-align: center;
+  padding-top: 1.1rem;
+  background-color: #F44336;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.16), 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#switch:hover {
+  box-shadow: 0 0.5rem 1.1rem 0 rgba(0, 0, 0, 0.18), 0 0.4rem 1.5rem 0 rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 50%;
+  }
+  #widget {
+    margin: 10rem auto 0;
+  }
+}

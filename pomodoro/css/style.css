@@ -1,0 +1,48 @@
+h2 {
+  margin-bottom: 50px;
+}
+
+h4 {
+  border-bottom: 2px solid #000;
+  display: inline-block;
+}
+
+#timer {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.minutes {
+  font-size: 2em;
+}
+
+.remIco,
+.addIco {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#footer {
+  margin-top: 60px;
+}
+
+#progressbar {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 2.6em;
+  }
+  #timer {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .progress {
+    width: 70%;
+    margin: 0 auto 40px;
+  }
+}

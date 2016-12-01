@@ -51,7 +51,7 @@ function createCORSRequest(method, url) {
 function getWeatherData(lat, lon) {
   var xhr = createCORSRequest(
     'GET',
-    'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=metric&APPID=dae492b9044e728c232337e86cceb2c0'
+    'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=metric&APPID=dae492b9044e728c232337e86cceb2c0'
   );
   if (!xhr) {
     throw new Error('CORS not supported');

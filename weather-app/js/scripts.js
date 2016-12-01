@@ -94,7 +94,7 @@ function useData(data) {
 
   // set the right weather icon
   var icon = document.createElement('img'),
-    iconSrc = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
+    iconSrc = 'img/icons/' + data.weather[0].icon + '.png';
   icon.setAttribute('src', iconSrc);
   icon.setAttribute('alt', data.weather[0].description);
   icon.setAttribute('title', data.weather[0].description);

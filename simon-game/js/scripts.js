@@ -40,7 +40,7 @@ $(document).ready(function () {
     if (playerArr[playerArr.length - 1] === computerArr[playerArr.length - 1]) {
       changeColorPlayer($(this).attr("id"), 0);
       // 20 repeats to win
-      if (playerArr.length === computerArr.length && computerArr.length === 5) {
+      if (playerArr.length === computerArr.length && computerArr.length === 20) {
         setTimeout(function () {
           sounds.win.play();
           instructionsToggle();

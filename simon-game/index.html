@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Simon Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" integrity="sha256-fGJODaGYSINeMscXSbyu3k+sCt9ON9XOpsVOcvco3Qg="
+    crossorigin="anonymous" />
+  <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicon/manifest.json">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#616161">
+</head>
+
+<body class="grey darken-2">
+  <audio id="win" preload>
+    <source src="audio/winner.ogg" type="audio/ogg">
+    <source src="audio/winner.mp3" type="audio/mp3">
+  </audio>
+  <audio id="fail" preload>
+    <source src="audio/fail.ogg" type="audio/ogg">
+    <source src="audio/fail.mp3" type="audio/mp3">
+  </audio>
+  <audio id="c" preload>
+    <source src="audio/c.ogg" type="audio/ogg">
+    <source src="audio/c.mp3" type="audio/mp3">
+  </audio>
+  <audio id="d" preload>
+    <source src="audio/d.ogg" type="audio/ogg">
+    <source src="audio/d.mp3" type="audio/mp3">
+  </audio>
+  <audio id="e" preload>
+    <source src="audio/e.ogg" type="audio/ogg">
+    <source src="audio/e.mp3" type="audio/mp3">
+  </audio>
+  <audio id="f" preload>
+    <source src="audio/f.ogg" type="audio/ogg">
+    <source src="audio/f.mp3" type="audio/mp3">
+  </audio>
+  <h3 class="center-align">Simon Game</h3>
+  <h4 class="center-align" id="instructions">Repeat 20 steps to win.</h4>
+  <h4 class="center-align green-text text-accent-4" id="won"><i class="material-icons" id="left">sentiment_very_satisfied</i>You won!!!<i class="material-icons" id="right">sentiment_very_satisfied</i></h4>
+  <div class="card-panel black" id="count">
+    <p class="red-text center-align" id="countText">--</p>
+  </div>
+  <table class="white">
+    <tbody>
+      <tr>
+        <td>
+          <button id="greenbtn" class="btn btn-block green colbtn"></button>
+        </td>
+        <td>
+          <button id="redbtn" class="btn btn-block red colbtn"></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="bluebtn" class="btn btn-block blue colbtn"></button>
+        </td>
+        <td>
+          <button id="yellowbtn" class="btn btn-block yellow colbtn"></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="controls">
+    <button class="btn black" id="start">Start</button>
+    <button class="btn black" id="strict">Strict<i class="material-icons right red-text" id="icon">thumb_down</i></button>
+  </div>
+  <p id="footer" class="center-align">Written and coded by <a href="https://www.freecodecamp.com/hutstep" target="_blank" class="white-text">hutstep</a>.</p>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

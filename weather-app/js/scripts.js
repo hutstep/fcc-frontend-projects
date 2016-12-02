@@ -1,3 +1,4 @@
+var intId;
 // Loading effect - change dot color
 (function () {
   var dots = document.getElementById('dots').children,
@@ -52,7 +53,7 @@ function useIpService() {
     getWeatherData(geoData.latitude, geoData.longitude);
   };
   xhr.onerror = function () {
-    alert('Woops, there was an error making the ip request.');
+    window.alert('Woops, there was an error making the ip request.');
   };
   xhr.send();
 }
@@ -69,7 +70,7 @@ function getWeatherData(lat, lon) {
     useData(JSON.parse(xhr.responseText));
   };
   xhr.onerror = function () {
-    alert('Woops, there was an error making the weather data request.');
+    window.alert('Woops, there was an error making the weather data request.');
   };
   xhr.send();
 }

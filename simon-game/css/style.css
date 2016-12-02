@@ -1,0 +1,63 @@
+table {
+  width: 21em;
+  height: 21em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #000;
+}
+
+td .btn {
+  width: 9.6em;
+  height: 9.6em;
+  border: 2px solid #000;
+}
+
+td {
+  padding: 0.4em;
+}
+
+#controls {
+  width: 21em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+#count {
+  width: 4em;
+  height: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+#countText {
+  padding-top: 0.3em;
+  font-size: 2em;
+  font-family: 'Electrolize', sans-serif;
+}
+
+#start {
+  float: left;
+}
+
+#strict {
+  float: right;
+}
+
+#left {
+  margin-right: 0.5em;
+}
+
+#right {
+  margin-left: 0.5em;
+}
+
+#won {
+  display: none;
+}
+
+#footer {
+  clear: both;
+  margin-top: 7em;
+}
